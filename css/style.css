@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    background-color: rgb(248,248,248);
+}
+
+/* navbar */
+
+.navbar {
+    text-transform: uppercase;
+   
+}
+
+.navigation .logo-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.navigation .logo-header i {
+    color: #1258DC;
+}
+
+/* header - home*/
+
+.hero-box {
+    position: relative;
+    height: 80rem;
+    background-image: url(../img/Lost-Ark.jpg);
+    z-index: 0;
+    background-size: cover;
+    background-position: 0 50%;
+}
+
+.hero-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: -1;
+  }
+
+ .hero-box .display-1 {
+    text-shadow: 0 0 25px white;
+ }
+
+  .hero-box .btn {
+    padding: 1em 2em;
+    font-size: 1.4rem;
+    text-transform:uppercase;
+}
+
+/* index - main */
+
+.home-main h5 i {
+font-size: 3rem;
+}
+
+/* footer */
+footer i {
+    color: #1258DC;
+}
+
+/* header - aboutus*/
+
+.hero-box-aboutus {
+    position: relative;
+    height: 20rem;
+    background-image: url(../img/aboutus/header-aboutus.JPG);
+    z-index: 0;
+    background-size:cover;
+    background-position: 0 20%;
+}
+
+.hero-box-aboutus .display-1 {
+    text-shadow: 0 0 25px white;
+ }
+
+ /* main - aboutus */
+
+.aboutus-info {
+    background-color: rgb(248,248,248);
+}
+
+.aboutus-info .container {
+    padding: 2em 0.5em;
+}
+
+.aboutus-text {
+    padding: 1.8em;
+}
+
+.aboutus-text h3 {
+    margin-bottom: 0.5em;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline #007BFF;
+}
+
+.aboutus-text-right {
+    text-align: right;
+}
+
+.aboutus-img-sharp {
+    height: 300px;
+    object-fit: cover;
+    object-position: 80% 0;
+}
+
+.aboutus-img-bard {
+    height: 300px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+.aboutus-img-gun {
+    height: 300px;
+    object-fit: cover;
+    object-position: 90% 0;
+}
+
+@media (min-width: 992px) {
+    .aboutus-info .container {
+        padding: 0;
+    }
+    .aboutus-shadow {
+        box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, .4);
+    }
+    .aboutus-text {
+        padding: 5em 0;
+        transform: skew(-15deg);
+    }
+    .aboutus-text-left {
+        padding-right: 2em;
+        text-align: right;
+    }
+    .aboutus-text-right {
+        padding-left: 2em;
+        text-align: left;
+    }
+    .aboutus-img-sharp, .aboutus-img-bard, .aboutus-img-gun{
+        height: auto;
+        transform: skew(-15deg);
+    }
+}
+
+/* header - Recruitment*/
+
+.hero-box-recruitment {
+    position: relative;
+    height: 100rem;
+    background-image: url(../img/recruitment/tło-lost-ark.jpg);
+    z-index: 0;
+    background-size:cover;
+    object-position: 100% 10%;
+
+}
+
+.hero-box-recruitment p {
+    text-shadow: 0 0 25px white;
+    text-align: center;
+ }
+
+ .hero-box-recruitment .display-2 {
+    text-shadow: 0 0 25px blue;
+    text-align: center;
+ }
+
+ .hero-box-recruitment .padding-top {
+
+    padding-top: 10rem;
+ }
+
+ /* main - Recruitment */
+.main-recruitment{
+ background-color: rgb(248,248,248);
+}
+
+/* Achievements */
+
+.hero-box-first-achievement {
+    position: relative;
+    height: 50rem;
+    background-image: url(../img/achievements/deaths-hold.png);
+    z-index: 0;
+    background-size: cover;
+
+}
+
+ .hero-box-first-achievement p {
+    text-shadow: 0 0 25px black;
+ }
+
+ .hero-box-first-achievement {
+    position: relative;
+    height: 40rem;
+    background-color: rgb(248,248,248);
+    z-index: 0;
+    background-size: cover;
+}
+
+.hero-box-second-achievement .display-1 {
+font-size: 3rem;
+}
+
+.hero-box-second-achievement img {
+    height: 10rem;
+}
+
+.hero-box-third-achievement {
+    position: relative;
+    height: 30rem;
+    background-image: url(../img/achievements/rank-status.PNG);
+    z-index: 0;
+    background-size: cover;
+    background-position: 0 90%;
+
+}
+
+.hero-box-third-achievement p {
+    text-shadow: 0 0 25px black;
+ }
+
+ .hero-box-four-achievement {
+    position: relative;
+    height: 50rem;
+    background-image: url(../img/achievements/high-gs.PNG);
+    z-index: 0;
+    background-size: cover;
+    background-position: 0 15%;
+
+}
+
+.hero-box-four-achievement p {
+    text-shadow: 0 0 25px black;
+ }
+
+ /* contact */
+
+ .hero-box-contact {
+    position: relative;
+    height: 30rem;
+    background-image: url(../img/contact/join-request.PNG);
+    z-index: 0;
+    background-size: cover;
+    background-position: 0 90%;
+
+}
+
+.hero-box-contact p {
+    text-shadow: 0 0 25px white;
+ }
+
+ .form-join-request option, .form-join-request select{
+    font-size: 1.6rem;
+ }
+
+ #Nickname {
+    font-size: 1.6rem;
+ }
+
+ .form-join-request .btn {
+    font-size: 1.6rem;
+ }
+
+ .main-contact a {
+   text-decoration: none;
+   color: black;
+   text-shadow: 0 0 10px blue;
+ }
+
+ .main-contact a:hover {
+    text-shadow: 0 0 10px red;
+  }

@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sad but Wet - Lost Ark guild</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top py-3 navigation bg-dark">
+        <div class="container">
+            <a class="navbar-brand logo-header text-light" href="#"> Sad But Wet<i class="bi bi-droplet-fill"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" 
+            aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto text-light">
+                    <a class="nav-link px-lg-3" href="index.html">Home</a>
+                     <a class="nav-link px-lg-3" href="aboutus.html">About us</a>
+                    <a class="nav-link px-lg-3 active" href="recruitment.html">recruitment</a>
+                    <a class="nav-link px-lg-3" href="achievements.html">achievements</a>
+                    <a class="nav-link px-lg-3" href="contact.html">contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="hero-box-recruitment pb-5">
+        <div class="container h-100 d-flex flex-column text-light">
+        <p class="padding-top">We want to build strong guild focused on pvp and pve endgame content with kind and nice people. </p>
+        <p>  Everyone in our guild want to progress and improve their skills.</p>
+        <div class="row m-0 mt-5 mb-5">
+            <div class="col-6">
+
+                <p class="display-2">We require: </p>
+                <p>- At least 18 y old.</p>
+                <p>- Be active on game and discord server.</p>
+                <p>- Reach minimum 400 contribution every week.</p>
+                <p>- Gearscore for DPS 1445 and for supports 1420.</p>
+            </div>
+            <div class="col-6">
+
+                <p class="display-2">We Offers: </p>
+                <p>- GvE for everyone.</p>
+                <p>- We organize raid's like valtan HM/NM and Argos p3.</p>
+                <p>- We planning to organize group for Vykas HM/NM when it's coming out.</p>
+                <p>- We have guild for alts that have lvl 5 and lvl 4 shop guild.</p>
+                <p>- GvG for geared people, more info below.</p>
+
+            </div>
+        </div>
+        <p class="display-2 pt-5">We require for GvG: </p>
+        <p>- Legendary Crest.</p>
+        <p>- Minimum 4 Engravings for PvP, that are correct for your class.</p>
+        <p>- Relic jewellery with correct statistic.</p>
+        <p>- Free time at 21.00-22.00 Sunday, server time.</p>
+        <p>- Proper potions, food and granates.</p>
+        <p>- for dps classes weapon at least +20 and 1445 gearscore, for support 1445 gearscore.</p>
+        <p>- Card sets: We'll meet Again (min. 9 awaken) and Forest of Giants (min. 9 awaken).</p>
+
+
+        <div class="hero-shadow"></div>
+        </div>
+        <p class="lead text-light">If you are interested to join our guild wirte on discord to Safiira#7833</p>
+    </header>
+<section class="main-recruitment text-center">
+    <div class="container pt-5">
+        <p class="display-2">Statistic for class that are in our legion:</p>
+        <div id="chart" class="py-5 text-dark"></div>
+        <div class="pt-5 border-top">
+        <p class="display-2">Statistic for people on GvG: </p>
+        <div id="chart1" class="py-5 text-dark d-flex justify-content-center"></div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<footer class="bg-dark text-light border-top">
+    <p class="text-center py-5 mb-0">&copy; 2022 Copyright Sad But Wet <i class="bi bi-droplet-fill"></i></p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script>
+var options = {
+    series: [45, 14, 4],
+    chart: {
+    width: 380,
+    type: 'pie',
+  },
+  labels: ['Not interested in GvG', 'DPS classes', 'Support classes'],
+  responsive: [{
+    breakpoint: 60,
+    options: {
+      chart: {
+        width: 200
+      },
+      legend: {
+        position: 'bottom'
+      }
+    }
+  }]
+  };
+
+  var chart = new ApexCharts(document.querySelector("#chart1"), options);
+  chart.render();
+</script>
+
+<script>
+var options = {
+    series: [
+    {
+      name: 'Actual',
+      data: [
+        {
+          x: 'Berserker',
+          y: 8,
+        },
+        {
+          x: 'Paladin',
+          y: 6,
+        },
+        {
+          x: 'Gunlancer',
+          y: 4,
+        },
+        {
+          x: 'Destroyer',
+          y: 0,
+        },
+        {
+          x: 'Striker',
+          y: 1,
+        },
+        {
+          x: 'Wardancer',
+          y: 2,
+
+        },
+        {
+          x: 'Scrapper',
+          y: 0,
+        },
+        {
+          x: 'Soulfist',
+          y: 1,
+
+        },
+        {
+          x: 'Glavier',
+          y: 1,
+
+        },
+        {
+          x: 'Gunslinger',
+          y: 7,
+        },
+        {
+          x: 'Artillerist',
+          y: 3,
+
+        },
+        {
+          x: 'Deadeye',
+          y: 0,
+
+        },
+        {
+          x: 'Sharpshooter',
+          y: 2,
+
+        },
+        {
+          x: 'Sorcereress',
+          y: 8,
+
+        },
+        {
+          x: 'Bard',
+          y: 9,
+
+        },
+        {
+          x: 'Shadowhunter',
+          y: 3,
+        },
+        {
+          x: 'Deathblade',
+          y: 4,
+        },
+      ]
+    }
+  ],
+    chart: {
+    height: 350,
+    type: 'bar'
+  },
+  plotOptions: {
+    bar: {
+      columnWidth: '60%'
+    }
+  },
+  colors: ['#00E396'],
+  dataLabels: {
+    enabled: false
+  },
+  legend: {
+    show: true,
+    showForSingleSeries: true,
+    customLegendItems: ['Actual'],
+    markers: {
+      fillColors: ['#00E396']
+    }
+  }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#chart"), options);
+  chart.render();
+</script>
+</body>
+</html>

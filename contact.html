@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sad but Wet - Lost Ark guild</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+<script>
+function GvgSection() {
+    var checkBox = document.getElementById("check-box-gvg");
+
+    var text = document.getElementById("hidden");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  } 
+  </script>
+</head>
+<body>
+    
+    <section class="m-0 main-achievements d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top py-3 navigation bg-dark">
+        <div class="container">
+            <a class="navbar-brand logo-header text-light" href="#"> Sad But Wet<i class="bi bi-droplet-fill"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" 
+            aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto text-light">
+                    <a class="nav-link px-lg-3" href="index.html">Home</a>
+                     <a class="nav-link px-lg-3" href="aboutus.html">About us</a>
+                    <a class="nav-link px-lg-3" href="recruitment.html">recruitment</a>
+                    <a class="nav-link px-lg-3" href="achievements.html">achievements</a>
+                    <a class="nav-link px-lg-3 active" href="contact.html">contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-box-contact pb-5">
+        <div class="container h-100 d-flex flex-column justify-content-center align-items-center
+         text-light">
+            <p class="display-1">Contact</p>
+
+            <div class="hero-shadow"></div>
+        </div>
+    </section>
+
+    <main class="container text-center pb-5 main-contact">
+        <div class="row m-0 pt-5">
+
+        <div class="rounded border p-5 form-join-request col-4">
+            <div class="pb-5">
+                <label for="exampleFormControlInput1" class="form-label float-start">Nickname</label>
+                <input type="Nickname" class="form-control form-control-lg" id="Nickname">
+            </div>
+
+            <div class="form-check pb-5">
+                <input class="form-check-input" type="checkbox" value="" id="check-box-age">
+                <label class="form-check-label float-start ms-3" for="check-box-age">
+                  Do you have at least 18 years old?
+                </label>
+            </div>
+
+                <div class="form-check pb-5 pt-3 d-flex justify-content-center">
+                    <div class="col-6">
+                        <input class="form-check-input" type="radio" name="flexRadiodps" id="flexRadiodps">
+                        <label class="form-check-label float-start ms-3" for="flexRadiodps">
+                            DPS
+                        </label>
+                    </div>
+                    <div class="col-6">
+                        <input class="form-check-input" type="radio" name="flexRadiosupp" id="flexRadiosupp">
+                        <label class="form-check-label float-start ms-3" for="flexRadiosupp">
+                            Supp
+                        </label>
+                    </div>
+                </div>
+
+            <select class="form-select form-select-lg mb-5" aria-label="form-select-lg example" id="select-gs">
+               <option selected>Select your Gearscore</option>
+                <option value="1">less than 1420</option>
+                <option value="2">1420-1445</option>
+                <option value="3">more than 1445</option>
+              </select>
+              
+
+            <div class="form-check pb-5">
+                 <input class="form-check-input" type="checkbox" value="" id="check-box-gvg" onclick="GvgSection()">
+                <label class="form-check-label float-start ms-3" for="check-box-gvg">
+                     Are you interested in GvG?
+                </label>
+            </div>
+
+            <div id="hidden" style="display:none" class="mt-3 pt-4 border-top">
+                <div class="form-check pb-5">
+                    <input class="form-check-input" type="checkbox" value="" id="check-box-crest">
+                   <label class="form-check-label float-start ms-3" for="check-box-crest">
+                        Do you have legendary crest?
+                   </label>
+               </div>
+
+               <select class="form-select form-select-lg mb-5 mt-3" aria-label="form-select-lg example" id="select-eng">
+                <option selected>How many lvl 3 engravings do you have?</option>
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="3">4</option>
+                 <option value="3">5</option>
+               </select>
+
+                <div class="form-check pb-5">
+                    <input class="form-check-input" type="checkbox" value="" id="check-box-time">
+                    <label class="form-check-label float-start ms-3" for="check-box-time">
+                        Do you have time at 21.00-22.00 Sunday?
+                    </label>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-outline-dark mt-5">Submit</button>
+        </div>
+
+
+          <div class="col-8 pt-5 d-flex justify-content-center align-items-center">
+            <div>
+                <h1 class="pt-5 pb-5 display-5">If you are interested to join our guild and you meet the <a href="recruitment.html"> requirements </a> wirte on my discord: </h1> 
+                <img src="./img/contact/discord-contact.PNG" alt="Discord contact: Safiira#7833" class="w-25 h-25 img-fluid">
+                <h1 class="pt-5 pb-5 display-5">You can also fill form in the left side of this website.</h1>
+            </div>
+          </div>
+        
+        </div>
+    </main>
+
+
+
+
+
+  
+    
+<footer class="bg-dark text-light mt-auto">
+    <p class="text-center py-5 mb-0">&copy; 2022 Copyright Sad But Wet <i class="bi bi-droplet-fill"></i></p>
+</footer>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
