@@ -40,7 +40,15 @@ body {
     background-image: url(../img/summoner.jpg);
     z-index: 0;
     background-size: cover;
-    background-position: 0 50%;
+    background-position: 0 10%;
+}
+
+@media (max-width: 700px) {
+    .hero-box {
+        background-image: url(../img/summoner.jpg);
+        background-size: cover;
+        background-position: 50% 10%;
+    }
 }
 
 .hero-shadow {
